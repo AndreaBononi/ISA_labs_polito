@@ -1,0 +1,92 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : advanced_IIR
+Version: O-2018.06-SP4
+Date   : Thu Oct 28 11:53:52 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: LoopRegB/regOUT_reg[0]
+              (rising edge-triggered flip-flop clocked by MYCLK)
+  Endpoint: LoopRegA/regOUT_reg[0]
+            (rising edge-triggered flip-flop clocked by MYCLK)
+  Path Group: MYCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  advanced_IIR       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MYCLK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  LoopRegB/regOUT_reg[0]/CK (DFF_X1)                      0.00       0.00 r
+  LoopRegB/regOUT_reg[0]/Q (DFF_X1)                       0.09       0.09 f
+  LoopRegB/regOUT[0] (reg_N11_5)                          0.00       0.09 f
+  sub_82/A[0] (advanced_IIR_DW01_sub_0)                   0.00       0.09 f
+  sub_82/U4/ZN (INV_X1)                                   0.03       0.12 r
+  sub_82/U3/ZN (NAND2_X1)                                 0.03       0.14 f
+  sub_82/U2_1/CO (FA_X1)                                  0.09       0.23 f
+  sub_82/U2_2/CO (FA_X1)                                  0.09       0.32 f
+  sub_82/U2_3/CO (FA_X1)                                  0.09       0.41 f
+  sub_82/U2_4/CO (FA_X1)                                  0.09       0.51 f
+  sub_82/U2_5/CO (FA_X1)                                  0.09       0.60 f
+  sub_82/U2_6/CO (FA_X1)                                  0.09       0.69 f
+  sub_82/U2_7/CO (FA_X1)                                  0.09       0.78 f
+  sub_82/U2_8/CO (FA_X1)                                  0.09       0.87 f
+  sub_82/U2_9/CO (FA_X1)                                  0.09       0.96 f
+  sub_82/U2_10/CO (FA_X1)                                 0.09       1.05 f
+  sub_82/U2_11/S (FA_X1)                                  0.11       1.16 f
+  sub_82/DIFF[11] (advanced_IIR_DW01_sub_0)               0.00       1.16 f
+  Sat1/SatIN[11] (sat_2)                                  0.00       1.16 f
+  Sat1/U19/ZN (OAI21_X1)                                  0.05       1.21 r
+  Sat1/U18/ZN (INV_X1)                                    0.06       1.27 f
+  Sat1/U16/ZN (OR3_X1)                                    0.10       1.37 f
+  Sat1/SatOUT[0] (sat_2)                                  0.00       1.37 f
+  add_88/A[0] (advanced_IIR_DW01_add_1)                   0.00       1.37 f
+  add_88/U2/ZN (AND2_X1)                                  0.05       1.42 f
+  add_88/U1_1/CO (FA_X1)                                  0.09       1.51 f
+  add_88/U1_2/CO (FA_X1)                                  0.09       1.60 f
+  add_88/U1_3/CO (FA_X1)                                  0.09       1.69 f
+  add_88/U1_4/CO (FA_X1)                                  0.09       1.78 f
+  add_88/U1_5/CO (FA_X1)                                  0.09       1.87 f
+  add_88/U1_6/CO (FA_X1)                                  0.09       1.96 f
+  add_88/U1_7/CO (FA_X1)                                  0.09       2.05 f
+  add_88/U1_8/CO (FA_X1)                                  0.09       2.14 f
+  add_88/U1_9/CO (FA_X1)                                  0.09       2.23 f
+  add_88/U1_10/CO (FA_X1)                                 0.09       2.32 f
+  add_88/U1_11/S (FA_X1)                                  0.11       2.43 f
+  add_88/SUM[11] (advanced_IIR_DW01_add_1)                0.00       2.43 f
+  Sat2/SatIN[11] (sat_1)                                  0.00       2.43 f
+  Sat2/U19/ZN (OAI21_X1)                                  0.05       2.49 r
+  Sat2/U18/ZN (INV_X1)                                    0.06       2.54 f
+  Sat2/U16/ZN (OR3_X1)                                    0.10       2.65 f
+  Sat2/SatOUT[0] (sat_1)                                  0.00       2.65 f
+  LoopRegA/regIN[0] (reg_N11_6)                           0.00       2.65 f
+  LoopRegA/U15/ZN (AOI22_X1)                              0.05       2.69 r
+  LoopRegA/U14/ZN (INV_X1)                                0.02       2.71 f
+  LoopRegA/regOUT_reg[0]/D (DFF_X1)                       0.01       2.72 f
+  data arrival time                                                  2.72
+
+  clock MYCLK (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  LoopRegA/regOUT_reg[0]/CK (DFF_X1)                      0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -2.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.17
+
+
+1
