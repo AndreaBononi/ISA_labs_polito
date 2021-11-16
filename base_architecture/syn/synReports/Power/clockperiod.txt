@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : clocks
+Design : myfilter
+Version: O-2018.06-SP4
+Date   : Tue Oct 19 12:46:49 2021
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+MYCLK           24.00   {0 12}              d         {clk}
+--------------------------------------------------------------------------------
+1
