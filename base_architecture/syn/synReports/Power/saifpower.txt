@@ -1,0 +1,56 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : myfilter
+Version: O-2018.06-SP4
+Date   : Tue Oct 19 12:56:24 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+myfilter               5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 578.6399 uW   (53%)
+  Net Switching Power  = 511.2610 uW   (47%)
+                         ---------
+Total Dynamic Power    =   1.0899 mW  (100%)
+
+Cell Leakage Power     =  37.5546 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          38.2847           10.9161        2.9252e+03           52.1261  (   4.62%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    540.3553          500.3452        3.4629e+04        1.0753e+03  (  95.38%)
+--------------------------------------------------------------------------------------------------
+Total            578.6401 uW       511.2613 uW     3.7555e+04 nW     1.1275e+03 uW
+1
