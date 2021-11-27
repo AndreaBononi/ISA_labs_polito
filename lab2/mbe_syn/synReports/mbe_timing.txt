@@ -1,0 +1,111 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : topmul_mbe
+Version: O-2018.06-SP4
+Date   : Sat Nov 27 13:44:56 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: mul/I1/B_SIG_reg[3]
+              (rising edge-triggered flip-flop clocked by MYCLK)
+  Endpoint: mul/I2/stage2/SIG_in_reg[27]
+            (rising edge-triggered flip-flop clocked by MYCLK)
+  Path Group: MYCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  topmul_mbe         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MYCLK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mul/I1/B_SIG_reg[3]/CK (DFF_X1)                         0.00       0.00 r
+  mul/I1/B_SIG_reg[3]/Q (DFF_X1)                          0.20       0.20 r
+  U4784/ZN (XNOR2_X1)                                     0.08       0.28 f
+  U5293/ZN (INV_X1)                                       0.06       0.34 r
+  U3792/ZN (INV_X1)                                       0.07       0.41 f
+  U3478/ZN (XNOR2_X1)                                     0.17       0.58 r
+  U4197/ZN (INV_X1)                                       0.05       0.62 f
+  U3797/Z (BUF_X1)                                        0.11       0.74 f
+  U3196/Z (XOR2_X1)                                       0.11       0.85 f
+  U3819/ZN (OAI22_X1)                                     0.06       0.91 r
+  U3818/ZN (INV_X1)                                       0.03       0.94 f
+  U3599/ZN (XNOR2_X1)                                     0.07       1.01 f
+  U3195/Z (XOR2_X1)                                       0.08       1.09 f
+  U3194/Z (XOR2_X1)                                       0.08       1.17 f
+  U4208/ZN (OAI21_X1)                                     0.05       1.21 r
+  U4205/ZN (OAI21_X1)                                     0.04       1.25 f
+  U3807/ZN (OAI21_X1)                                     0.05       1.30 r
+  U3800/ZN (AOI22_X1)                                     0.03       1.33 f
+  U3798/ZN (OAI22_X1)                                     0.05       1.38 r
+  U4182/ZN (AOI22_X1)                                     0.03       1.42 f
+  U4180/ZN (OAI22_X1)                                     0.05       1.47 r
+  U3814/ZN (AOI22_X1)                                     0.03       1.50 f
+  U3813/ZN (INV_X1)                                       0.03       1.53 r
+  U3812/ZN (OAI21_X1)                                     0.03       1.56 f
+  U3824/ZN (AOI22_X1)                                     0.06       1.62 r
+  U3823/ZN (AND2_X1)                                      0.05       1.67 r
+  U3821/ZN (OAI22_X1)                                     0.03       1.70 f
+  U3603/ZN (OAI21_X1)                                     0.05       1.75 r
+  U3602/ZN (INV_X1)                                       0.02       1.77 f
+  U3589/ZN (AOI21_X1)                                     0.06       1.83 r
+  U3588/ZN (AND2_X1)                                      0.05       1.88 r
+  U3586/ZN (OAI22_X1)                                     0.03       1.91 f
+  U3593/ZN (AOI22_X1)                                     0.05       1.96 r
+  U3590/ZN (OAI22_X1)                                     0.04       1.99 f
+  U3598/ZN (AOI22_X1)                                     0.06       2.05 r
+  U3596/ZN (OAI22_X1)                                     0.04       2.09 f
+  U3526/ZN (AOI22_X1)                                     0.07       2.16 r
+  U3584/ZN (OAI22_X1)                                     0.05       2.21 f
+  U3528/ZN (AOI22_X1)                                     0.07       2.28 r
+  U3517/ZN (OAI22_X1)                                     0.05       2.33 f
+  U3530/ZN (AOI22_X1)                                     0.07       2.40 r
+  U3489/ZN (OAI22_X1)                                     0.05       2.45 f
+  U3494/ZN (AOI22_X1)                                     0.07       2.53 r
+  U3481/ZN (OAI22_X1)                                     0.05       2.57 f
+  U3499/ZN (AOI22_X1)                                     0.07       2.65 r
+  U3483/ZN (OAI22_X1)                                     0.05       2.69 f
+  U3497/ZN (AOI22_X1)                                     0.07       2.77 r
+  U3518/ZN (OAI22_X1)                                     0.05       2.82 f
+  U3500/ZN (AOI22_X1)                                     0.07       2.89 r
+  U3490/ZN (OAI22_X1)                                     0.05       2.94 f
+  U3495/ZN (AOI22_X1)                                     0.07       3.01 r
+  U3485/ZN (OAI22_X1)                                     0.05       3.06 f
+  U3492/ZN (AOI22_X1)                                     0.07       3.13 r
+  U3487/ZN (OAI22_X1)                                     0.05       3.18 f
+  U3496/ZN (AOI22_X1)                                     0.07       3.25 r
+  U3520/ZN (OAI22_X1)                                     0.05       3.30 f
+  U3524/ZN (AOI22_X1)                                     0.07       3.37 r
+  U3522/ZN (OAI22_X1)                                     0.05       3.42 f
+  U3527/ZN (AOI22_X1)                                     0.07       3.49 r
+  U3515/ZN (OAI22_X1)                                     0.05       3.54 f
+  U3600/ZN (AOI22_X1)                                     0.06       3.60 r
+  U1937/Z (XOR2_X1)                                       0.07       3.67 r
+  U1936/Z (XOR2_X1)                                       0.07       3.74 r
+  U3827/Z (XOR2_X1)                                       0.06       3.80 r
+  mul/I2/stage2/SIG_in_reg[27]/D (DFF_X1)                 0.01       3.81 r
+  data arrival time                                                  3.81
+
+  clock MYCLK (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  mul/I2/stage2/SIG_in_reg[27]/CK (DFF_X1)                0.00       9.93 r
+  library setup time                                     -0.03       9.90
+  data required time                                                 9.90
+  --------------------------------------------------------------------------
+  data required time                                                 9.90
+  data arrival time                                                 -3.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.08
+
+
+1

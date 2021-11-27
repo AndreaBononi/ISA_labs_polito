@@ -1,0 +1,109 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : topmul_mbe
+Version: O-2018.06-SP4
+Date   : Sat Nov 27 14:03:23 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: mul/I1/B_SIG_reg[1]
+              (rising edge-triggered flip-flop clocked by MYCLK)
+  Endpoint: mul/I2/stage2/SIG_in_reg[27]
+            (rising edge-triggered flip-flop clocked by MYCLK)
+  Path Group: MYCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  topmul_mbe         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MYCLK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mul/I1/B_SIG_reg[1]/CK (DFF_X1)                         0.00       0.00 r
+  mul/I1/B_SIG_reg[1]/QN (DFF_X1)                         0.20       0.20 r
+  U2798/Z (CLKBUF_X1)                                     0.17       0.37 r
+  U2799/ZN (NOR2_X1)                                      0.05       0.42 f
+  U2578/ZN (AOI21_X2)                                     0.18       0.60 r
+  U2800/ZN (INV_X1)                                       0.13       0.73 f
+  U2801/Z (CLKBUF_X1)                                     0.14       0.86 f
+  U2803/ZN (OAI22_X1)                                     0.16       1.02 r
+  U2804/Z (CLKBUF_X1)                                     0.19       1.21 r
+  U4646/Z (XOR2_X1)                                       0.10       1.31 r
+  U4648/ZN (XNOR2_X1)                                     0.07       1.38 r
+  U4672/Z (XOR2_X1)                                       0.08       1.46 r
+  U4673/ZN (INV_X1)                                       0.03       1.49 f
+  U4677/Z (XOR2_X1)                                       0.07       1.56 f
+  U4706/ZN (AOI222_X1)                                    0.12       1.68 r
+  U4709/ZN (AOI222_X1)                                    0.06       1.74 f
+  U4714/ZN (AOI222_X1)                                    0.12       1.86 r
+  U4724/ZN (AOI222_X1)                                    0.06       1.92 f
+  U4729/ZN (AOI222_X1)                                    0.12       2.05 r
+  U4734/ZN (AOI222_X1)                                    0.06       2.10 f
+  U4735/ZN (AOI222_X1)                                    0.13       2.24 r
+  U4736/ZN (AOI222_X1)                                    0.06       2.29 f
+  U4737/ZN (AOI222_X1)                                    0.13       2.42 r
+  U4739/ZN (AOI222_X1)                                    0.05       2.48 f
+  U4740/ZN (OAI21_X1)                                     0.04       2.52 r
+  U4742/ZN (AOI21_X1)                                     0.03       2.55 f
+  U4744/ZN (OAI222_X1)                                    0.04       2.59 r
+  U4746/ZN (OAI221_X1)                                    0.06       2.65 f
+  intadd_0/U15/CO (FA_X1)                                 0.11       2.76 f
+  intadd_0/U14/CO (FA_X1)                                 0.09       2.85 f
+  intadd_0/U13/CO (FA_X1)                                 0.09       2.94 f
+  intadd_0/U12/CO (FA_X1)                                 0.09       3.03 f
+  intadd_0/U11/CO (FA_X1)                                 0.09       3.12 f
+  intadd_0/U10/CO (FA_X1)                                 0.09       3.21 f
+  intadd_0/U9/CO (FA_X1)                                  0.09       3.30 f
+  intadd_0/U8/CO (FA_X1)                                  0.09       3.39 f
+  intadd_0/U7/CO (FA_X1)                                  0.09       3.48 f
+  intadd_0/U6/CO (FA_X1)                                  0.09       3.57 f
+  intadd_0/U5/CO (FA_X1)                                  0.09       3.66 f
+  intadd_0/U4/CO (FA_X1)                                  0.09       3.76 f
+  intadd_0/U3/CO (FA_X1)                                  0.09       3.85 f
+  intadd_0/U2/CO (FA_X1)                                  0.09       3.93 f
+  U2757/ZN (INV_X1)                                       0.03       3.97 r
+  intadd_2/U5/CO (FA_X1)                                  0.08       4.04 r
+  intadd_2/U4/CO (FA_X1)                                  0.07       4.11 r
+  intadd_2/U3/CO (FA_X1)                                  0.07       4.18 r
+  intadd_2/U2/CO (FA_X1)                                  0.06       4.24 r
+  U2755/ZN (INV_X1)                                       0.02       4.26 f
+  intadd_1/U8/CO (FA_X1)                                  0.10       4.36 f
+  intadd_1/U7/CO (FA_X1)                                  0.09       4.45 f
+  intadd_1/U6/CO (FA_X1)                                  0.09       4.54 f
+  intadd_1/U5/CO (FA_X1)                                  0.09       4.63 f
+  intadd_1/U4/CO (FA_X1)                                  0.09       4.73 f
+  intadd_1/U3/CO (FA_X1)                                  0.09       4.82 f
+  intadd_1/U2/CO (FA_X1)                                  0.09       4.91 f
+  U4909/Z (XOR2_X1)                                       0.08       4.98 f
+  U4912/ZN (XNOR2_X1)                                     0.06       5.04 f
+  U4913/Z (XOR2_X1)                                       0.08       5.11 f
+  U4917/ZN (XNOR2_X1)                                     0.06       5.17 f
+  U4920/Z (XOR2_X1)                                       0.07       5.24 f
+  U4921/ZN (XNOR2_X1)                                     0.06       5.30 f
+  U4926/ZN (XNOR2_X1)                                     0.05       5.35 f
+  mul/I2/stage2/SIG_in_reg[27]/D (DFF_X1)                 0.01       5.36 f
+  data arrival time                                                  5.36
+
+  clock MYCLK (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  mul/I2/stage2/SIG_in_reg[27]/CK (DFF_X1)                0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -5.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.53
+
+
+1
