@@ -1,0 +1,110 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : topmul_stage2modified
+Version: O-2018.06-SP4
+Date   : Tue Nov  9 18:55:16 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: rstN (input port clocked by MYCLK)
+  Endpoint: MYCLK_r_REG114_S1
+            (rising edge-triggered flip-flop clocked by MYCLK)
+  Path Group: MYCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  topmul_stage2modified
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MYCLK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  rstN (in)                                               0.00       0.50 r
+  U558/ZN (AND2_X1)                                       0.17       0.67 r
+  mul/I2/stage2/mult_134/A[2] (topmul_stage2modified_DW02_mult_0)
+                                                          0.00       0.67 r
+  mul/I2/stage2/mult_134/U1292/ZN (INV_X1)                0.13       0.80 f
+  mul/I2/stage2/mult_134/U1429/Z (XOR2_X1)                0.12       0.92 r
+  mul/I2/stage2/mult_134/U1213/ZN (INV_X1)                0.03       0.95 f
+  mul/I2/stage2/mult_134/U1214/ZN (AND2_X1)               0.05       1.00 f
+  mul/I2/stage2/mult_134/U1181/ZN (INV_X1)                0.16       1.16 r
+  mul/I2/stage2/mult_134/U1351/ZN (OAI22_X1)              0.07       1.23 f
+  mul/I2/stage2/mult_134/U1350/ZN (XNOR2_X1)              0.06       1.29 f
+  mul/I2/stage2/mult_134/U381/S (HA_X1)                   0.08       1.37 f
+  mul/I2/stage2/mult_134/U2004/ZN (AOI222_X1)             0.12       1.49 r
+  mul/I2/stage2/mult_134/U2000/ZN (OAI222_X1)             0.07       1.56 f
+  mul/I2/stage2/mult_134/U1996/ZN (AOI222_X1)             0.11       1.67 r
+  mul/I2/stage2/mult_134/U1992/ZN (OAI222_X1)             0.07       1.74 f
+  mul/I2/stage2/mult_134/U1988/ZN (AOI222_X1)             0.11       1.85 r
+  mul/I2/stage2/mult_134/U1984/ZN (OAI222_X1)             0.07       1.92 f
+  mul/I2/stage2/mult_134/U1980/ZN (AOI222_X1)             0.11       2.03 r
+  mul/I2/stage2/mult_134/U1976/ZN (OAI222_X1)             0.07       2.10 f
+  mul/I2/stage2/mult_134/U1972/ZN (AOI222_X1)             0.11       2.21 r
+  mul/I2/stage2/mult_134/U1968/ZN (OAI222_X1)             0.07       2.28 f
+  mul/I2/stage2/mult_134/U1964/ZN (AOI222_X1)             0.11       2.39 r
+  mul/I2/stage2/mult_134/U1960/ZN (OAI222_X1)             0.07       2.46 f
+  mul/I2/stage2/mult_134/U1956/ZN (AOI222_X1)             0.11       2.57 r
+  mul/I2/stage2/mult_134/U1952/ZN (OAI222_X1)             0.07       2.64 f
+  mul/I2/stage2/mult_134/U1948/ZN (AOI222_X1)             0.11       2.75 r
+  mul/I2/stage2/mult_134/U1944/ZN (OAI222_X1)             0.07       2.82 f
+  mul/I2/stage2/mult_134/U1940/ZN (AOI222_X1)             0.10       2.92 r
+  mul/I2/stage2/mult_134/U1291/ZN (INV_X1)                0.03       2.94 f
+  mul/I2/stage2/mult_134/U1936/ZN (AOI222_X1)             0.11       3.05 r
+  mul/I2/stage2/mult_134/U1932/ZN (OAI222_X1)             0.07       3.12 f
+  mul/I2/stage2/mult_134/U157/CO (FA_X1)                  0.10       3.21 f
+  mul/I2/stage2/mult_134/U156/CO (FA_X1)                  0.09       3.30 f
+  mul/I2/stage2/mult_134/U155/CO (FA_X1)                  0.09       3.39 f
+  mul/I2/stage2/mult_134/U154/CO (FA_X1)                  0.09       3.48 f
+  mul/I2/stage2/mult_134/U153/CO (FA_X1)                  0.09       3.57 f
+  mul/I2/stage2/mult_134/U152/CO (FA_X1)                  0.09       3.67 f
+  mul/I2/stage2/mult_134/U151/CO (FA_X1)                  0.09       3.76 f
+  mul/I2/stage2/mult_134/U150/CO (FA_X1)                  0.09       3.85 f
+  mul/I2/stage2/mult_134/U149/CO (FA_X1)                  0.09       3.94 f
+  mul/I2/stage2/mult_134/U148/CO (FA_X1)                  0.09       4.03 f
+  mul/I2/stage2/mult_134/U147/CO (FA_X1)                  0.09       4.12 f
+  mul/I2/stage2/mult_134/U146/CO (FA_X1)                  0.09       4.21 f
+  mul/I2/stage2/mult_134/U145/CO (FA_X1)                  0.09       4.30 f
+  mul/I2/stage2/mult_134/U144/CO (FA_X1)                  0.09       4.39 f
+  mul/I2/stage2/mult_134/U143/CO (FA_X1)                  0.09       4.48 f
+  mul/I2/stage2/mult_134/U142/CO (FA_X1)                  0.09       4.57 f
+  mul/I2/stage2/mult_134/U141/CO (FA_X1)                  0.09       4.66 f
+  mul/I2/stage2/mult_134/U140/CO (FA_X1)                  0.09       4.75 f
+  mul/I2/stage2/mult_134/U139/CO (FA_X1)                  0.09       4.84 f
+  mul/I2/stage2/mult_134/U138/CO (FA_X1)                  0.09       4.93 f
+  mul/I2/stage2/mult_134/U137/CO (FA_X1)                  0.09       5.03 f
+  mul/I2/stage2/mult_134/U136/CO (FA_X1)                  0.09       5.12 f
+  mul/I2/stage2/mult_134/U135/CO (FA_X1)                  0.09       5.21 f
+  mul/I2/stage2/mult_134/U134/CO (FA_X1)                  0.09       5.30 f
+  mul/I2/stage2/mult_134/U133/CO (FA_X1)                  0.09       5.39 f
+  mul/I2/stage2/mult_134/U2017/ZN (XNOR2_X1)              0.06       5.45 f
+  mul/I2/stage2/mult_134/U2016/ZN (XNOR2_X1)              0.06       5.50 f
+  mul/I2/stage2/mult_134/U2012/Z (XOR2_X1)                0.08       5.58 f
+  mul/I2/stage2/mult_134/PRODUCT[47] (topmul_stage2modified_DW02_mult_0)
+                                                          0.00       5.58 f
+  MYCLK_r_REG114_S1/D (DFF_X1)                            0.01       5.59 f
+  data arrival time                                                  5.59
+
+  clock MYCLK (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  MYCLK_r_REG114_S1/CK (DFF_X1)                           0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -5.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.30
+
+
+1
