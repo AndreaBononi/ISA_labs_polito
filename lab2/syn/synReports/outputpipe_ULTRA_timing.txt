@@ -7,15 +7,15 @@ Report : timing
         -max_paths 1
 Design : topmul_stage2modified
 Version: O-2018.06-SP4
-Date   : Sat Nov 27 14:51:49 2021
+Date   : Tue Dec 14 15:10:57 2021
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
-  Startpoint: mul/I1/A_SIG_reg[2]
+  Startpoint: mul/I1/A_SIG_reg[5]
               (rising edge-triggered flip-flop clocked by MYCLK)
-  Endpoint: mul/I2/stage2/SIG_in_reg[27]
+  Endpoint: mul/I2/stage2/SIG_in_reg[17]
             (rising edge-triggered flip-flop clocked by MYCLK)
   Path Group: MYCLK
   Path Type: max
@@ -29,110 +29,42 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock MYCLK (rise edge)                                 0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  mul/I1/A_SIG_reg[2]/CK (DFF_X1)                         0.00       0.00 r
-  mul/I1/A_SIG_reg[2]/Q (DFF_X1)                          0.20       0.20 r
-  U495/Z (CLKBUF_X1)                                      0.10       0.30 r
-  U496/ZN (INV_X1)                                        0.08       0.37 f
-  U501/Z (XOR2_X1)                                        0.10       0.48 f
-  U507/ZN (NOR2_X1)                                       0.17       0.64 r
-  U508/Z (CLKBUF_X1)                                      0.14       0.78 r
-  U511/ZN (AOI222_X1)                                     0.07       0.86 f
-  U1398/ZN (XNOR2_X1)                                     0.08       0.94 f
-  U1402/ZN (AOI22_X1)                                     0.06       0.99 r
-  U1403/ZN (OAI21_X1)                                     0.04       1.03 f
-  U1404/ZN (OAI21_X1)                                     0.04       1.07 r
-  U1410/ZN (AOI22_X1)                                     0.03       1.10 f
-  U1411/ZN (OAI21_X1)                                     0.04       1.14 r
-  U1412/ZN (OAI21_X1)                                     0.04       1.18 f
-  U1418/ZN (AOI22_X1)                                     0.05       1.23 r
-  U1419/ZN (OAI21_X1)                                     0.04       1.26 f
-  U1420/ZN (OAI21_X1)                                     0.04       1.31 r
-  U1425/ZN (AOI22_X1)                                     0.03       1.34 f
-  U1426/ZN (OAI21_X1)                                     0.04       1.38 r
-  U1427/ZN (OAI21_X1)                                     0.04       1.42 f
-  U1431/ZN (AOI22_X1)                                     0.05       1.48 r
-  U1432/ZN (OAI21_X1)                                     0.04       1.51 f
-  U1433/ZN (OAI21_X1)                                     0.04       1.56 r
-  U1438/ZN (AOI22_X1)                                     0.03       1.59 f
-  U1439/ZN (OAI21_X1)                                     0.04       1.63 r
-  U1440/ZN (OAI21_X1)                                     0.04       1.67 f
-  U1444/ZN (AOI22_X1)                                     0.05       1.72 r
-  U1445/ZN (OAI21_X1)                                     0.04       1.76 f
-  U1446/ZN (OAI21_X1)                                     0.04       1.80 r
-  U1451/ZN (AOI22_X1)                                     0.03       1.84 f
-  U1452/ZN (OAI21_X1)                                     0.04       1.88 r
-  U1453/ZN (OAI21_X1)                                     0.04       1.92 f
-  U1457/ZN (AOI22_X1)                                     0.05       1.97 r
-  U1458/ZN (OAI21_X1)                                     0.04       2.01 f
-  U1459/ZN (OAI21_X1)                                     0.04       2.05 r
-  U1464/ZN (AOI22_X1)                                     0.03       2.09 f
-  U1465/ZN (OAI21_X1)                                     0.04       2.13 r
-  U1466/ZN (OAI21_X1)                                     0.04       2.17 f
-  U1470/ZN (AOI22_X1)                                     0.05       2.22 r
-  U1471/ZN (OAI21_X1)                                     0.04       2.26 f
-  U1472/ZN (OAI21_X1)                                     0.04       2.30 r
-  U1477/ZN (AOI22_X1)                                     0.03       2.34 f
-  U1478/ZN (OAI21_X1)                                     0.04       2.38 r
-  U1479/ZN (OAI21_X1)                                     0.04       2.42 f
-  U1483/ZN (AOI22_X1)                                     0.05       2.47 r
-  U1484/ZN (OAI21_X1)                                     0.04       2.50 f
-  U1485/ZN (OAI21_X1)                                     0.04       2.55 r
-  U1490/ZN (AOI22_X1)                                     0.03       2.58 f
-  U1491/ZN (OAI21_X1)                                     0.04       2.63 r
-  U1492/ZN (OAI21_X1)                                     0.04       2.66 f
-  U1496/ZN (AOI22_X1)                                     0.05       2.72 r
-  U1497/ZN (OAI21_X1)                                     0.04       2.75 f
-  U1498/ZN (OAI21_X1)                                     0.04       2.80 r
-  U1503/ZN (AOI22_X1)                                     0.03       2.83 f
-  U1504/ZN (OAI21_X1)                                     0.04       2.87 r
-  U1505/ZN (OAI21_X1)                                     0.04       2.91 f
-  U1509/ZN (OAI22_X1)                                     0.04       2.96 r
-  U1510/ZN (AOI21_X1)                                     0.03       2.99 f
-  U1511/ZN (AOI21_X1)                                     0.07       3.06 r
-  U1515/ZN (AOI22_X1)                                     0.03       3.09 f
-  U1516/ZN (OAI21_X1)                                     0.04       3.13 r
-  U1517/ZN (OAI21_X1)                                     0.04       3.17 f
-  intadd_12/U5/CO (FA_X1)                                 0.10       3.28 f
-  intadd_12/U4/CO (FA_X1)                                 0.09       3.37 f
-  intadd_12/U3/CO (FA_X1)                                 0.09       3.46 f
-  intadd_12/U2/CO (FA_X1)                                 0.09       3.55 f
-  intadd_0/U22/CO (FA_X1)                                 0.10       3.65 f
-  intadd_0/U21/CO (FA_X1)                                 0.09       3.74 f
-  intadd_0/U20/CO (FA_X1)                                 0.09       3.83 f
-  intadd_0/U19/CO (FA_X1)                                 0.09       3.93 f
-  intadd_0/U18/CO (FA_X1)                                 0.09       4.02 f
-  intadd_0/U17/CO (FA_X1)                                 0.09       4.11 f
-  intadd_0/U16/CO (FA_X1)                                 0.09       4.20 f
-  intadd_0/U15/CO (FA_X1)                                 0.09       4.29 f
-  intadd_0/U14/CO (FA_X1)                                 0.09       4.38 f
-  intadd_0/U13/CO (FA_X1)                                 0.09       4.47 f
-  intadd_0/U12/CO (FA_X1)                                 0.09       4.56 f
-  intadd_0/U11/CO (FA_X1)                                 0.09       4.65 f
-  intadd_0/U10/CO (FA_X1)                                 0.09       4.74 f
-  intadd_0/U9/CO (FA_X1)                                  0.09       4.83 f
-  intadd_0/U8/CO (FA_X1)                                  0.09       4.92 f
-  intadd_0/U7/CO (FA_X1)                                  0.09       5.01 f
-  intadd_0/U6/CO (FA_X1)                                  0.09       5.10 f
-  intadd_0/U5/CO (FA_X1)                                  0.09       5.19 f
-  intadd_0/U4/CO (FA_X1)                                  0.09       5.29 f
-  intadd_0/U3/CO (FA_X1)                                  0.09       5.38 f
-  intadd_0/U2/CO (FA_X1)                                  0.09       5.46 f
-  U1534/ZN (XNOR2_X1)                                     0.06       5.52 f
-  U1536/ZN (XNOR2_X1)                                     0.05       5.57 f
-  mul/I2/stage2/SIG_in_reg[27]/D (DFF_X1)                 0.01       5.58 f
-  data arrival time                                                  5.58
+  mul/I1/A_SIG_reg[5]/CK (DFF_X1)                         0.00       0.00 r
+  mul/I1/A_SIG_reg[5]/Q (DFF_X1)                          0.10       0.10 r
+  U754/ZN (XNOR2_X1)                                      0.06       0.16 r
+  U880/ZN (NAND2_X1)                                      0.04       0.20 f
+  U448/Z (BUF_X4)                                         0.06       0.26 f
+  U1396/ZN (OAI22_X1)                                     0.08       0.33 r
+  U766/ZN (OAI21_X1)                                      0.04       0.37 f
+  U721/ZN (NAND2_X1)                                      0.04       0.40 r
+  U1595/S (FA_X1)                                         0.12       0.52 f
+  U1597/S (FA_X1)                                         0.14       0.66 f
+  U594/ZN (OAI21_X1)                                      0.05       0.70 r
+  U592/ZN (NAND2_X1)                                      0.04       0.74 f
+  U591/ZN (XNOR2_X1)                                      0.06       0.80 f
+  U590/ZN (XNOR2_X1)                                      0.06       0.87 f
+  U1708/ZN (NAND2_X1)                                     0.04       0.91 r
+  U1710/ZN (OAI21_X1)                                     0.04       0.95 f
+  U1714/ZN (AOI21_X1)                                     0.05       0.99 r
+  U1868/ZN (OAI21_X1)                                     0.04       1.03 f
+  U759/ZN (AOI21_X1)                                      0.08       1.11 r
+  U1922/ZN (OAI21_X1)                                     0.04       1.15 f
+  U1945/ZN (AOI21_X1)                                     0.05       1.20 r
+  U1967/ZN (XNOR2_X1)                                     0.06       1.26 r
+  mul/I2/stage2/SIG_in_reg[17]/D (DFF_X1)                 0.01       1.27 r
+  data arrival time                                                  1.27
 
-  clock MYCLK (rise edge)                                10.00      10.00
-  clock network delay (ideal)                             0.00      10.00
-  clock uncertainty                                      -0.07       9.93
-  mul/I2/stage2/SIG_in_reg[27]/CK (DFF_X1)                0.00       9.93 r
-  library setup time                                     -0.04       9.89
-  data required time                                                 9.89
+  clock MYCLK (rise edge)                                 1.37       1.37
+  clock network delay (ideal)                             0.00       1.37
+  clock uncertainty                                      -0.07       1.30
+  mul/I2/stage2/SIG_in_reg[17]/CK (DFF_X1)                0.00       1.30 r
+  library setup time                                     -0.03       1.27
+  data required time                                                 1.27
   --------------------------------------------------------------------------
-  data required time                                                 9.89
-  data arrival time                                                 -5.58
+  data required time                                                 1.27
+  data arrival time                                                 -1.27
   --------------------------------------------------------------------------
-  slack (MET)                                                        4.30
+  slack (MET)                                                        0.00
 
 
 1
