@@ -1,0 +1,62 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : topmul_mbe
+Version: O-2018.06-SP4
+Date   : Wed Dec 15 21:04:23 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: MYCLK_r_REG486_S1
+              (rising edge-triggered flip-flop clocked by MYCLK)
+  Endpoint: MYCLK_r_REG240_S2
+            (rising edge-triggered flip-flop clocked by MYCLK)
+  Path Group: MYCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  topmul_mbe         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MYCLK (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  MYCLK_r_REG486_S1/CK (DFF_X1)            0.00       0.00 r
+  MYCLK_r_REG486_S1/Q (DFF_X1)             0.11       0.11 r
+  U6163/Z (XOR2_X1)                        0.09       0.20 r
+  U6164/ZN (NAND2_X1)                      0.04       0.24 f
+  U4107/ZN (OR2_X2)                        0.06       0.30 f
+  U6938/ZN (OAI21_X1)                      0.05       0.35 r
+  U7049/Z (XOR2_X1)                        0.07       0.42 r
+  U7050/ZN (NAND2_X1)                      0.04       0.46 f
+  U4038/ZN (NAND2_X1)                      0.04       0.51 r
+  U5035/ZN (XNOR2_X1)                      0.07       0.58 r
+  U5188/ZN (XNOR2_X1)                      0.07       0.65 r
+  U5187/ZN (XNOR2_X1)                      0.06       0.70 r
+  U7151/ZN (OAI21_X1)                      0.03       0.74 f
+  U7152/ZN (NAND2_X1)                      0.03       0.77 r
+  U7341/ZN (NAND4_X1)                      0.04       0.81 f
+  MYCLK_r_REG240_S2/D (DFF_X1)             0.01       0.82 f
+  data arrival time                                   0.82
+
+  clock MYCLK (rise edge)                  0.93       0.93
+  clock network delay (ideal)              0.00       0.93
+  clock uncertainty                       -0.07       0.86
+  MYCLK_r_REG240_S2/CK (DFF_X1)            0.00       0.86 r
+  library setup time                      -0.04       0.82
+  data required time                                  0.82
+  -----------------------------------------------------------
+  data required time                                  0.82
+  data arrival time                                  -0.82
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

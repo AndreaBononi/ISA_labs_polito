@@ -3,7 +3,7 @@
 Report : area
 Design : topmul_mbe
 Version: O-2018.06-SP4
-Date   : Sat Nov 27 13:44:56 2021
+Date   : Tue Dec 14 21:27:27 2021
 ****************************************
 
 Library(s) Used:
@@ -11,20 +11,20 @@ Library(s) Used:
     NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
 
 Number of ports:                          174
-Number of nets:                          3575
-Number of cells:                         3349
-Number of combinational cells:           3062
+Number of nets:                          3711
+Number of cells:                         3484
+Number of combinational cells:           3197
 Number of sequential cells:               283
 Number of macros/black boxes:               0
-Number of buf/inv:                        381
-Number of references:                      31
+Number of buf/inv:                        469
+Number of references:                      42
 
-Combinational area:               4110.497965
-Buf/Inv area:                      229.557999
-Noncombinational area:            1318.561958
+Combinational area:               4256.797966
+Buf/Inv area:                      312.549999
+Noncombinational area:            1319.625958
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                  5429.059924
+Total cell area:                  5576.423924
 Total area:                 undefined
 1
