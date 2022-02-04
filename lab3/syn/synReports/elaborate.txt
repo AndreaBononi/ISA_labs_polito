@@ -1,0 +1,152 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'riscV'.
+Information: Building the design 'mux2to1' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine reg_N32 line 22 in file
+		'../src/reg.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     regOUT_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'incrementer4' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'BPU'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RF' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CU'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'bubbleMultiplexer'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg' instantiated from design 'riscV' with
+	the parameters "N=5". (HDL-193)
+
+Inferred memory devices in process
+	in routine reg_N5 line 22 in file
+		'../src/reg.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     regOUT_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'D_FF'. (HDL-193)
+
+Inferred memory devices in process
+	in routine D_FF line 19 in file
+		'../src/D_FF.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     dffOUT_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'reg' instantiated from design 'riscV' with
+	the parameters "N=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine reg_N2 line 22 in file
+		'../src/reg.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     regOUT_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'reg' instantiated from design 'riscV' with
+	the parameters "N=3". (HDL-193)
+
+Inferred memory devices in process
+	in routine reg_N3 line 22 in file
+		'../src/reg.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     regOUT_reg      | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'HDU'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux8to1' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux4to1' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALU' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FU'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg' instantiated from design 'BPU' with
+	the parameters "N=10". (HDL-193)
+
+Inferred memory devices in process
+	in routine reg_N10 line 22 in file
+		'../src/reg.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     regOUT_reg      | Flip-flop |  10   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'predictionTable'. (HDL-193)
+
+Inferred memory devices in process
+	in routine predictionTable line 34 in file
+		'../src/predictionTable.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       PT_reg        | Flip-flop | 33792 |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+========================================================
+|  block name/line   | Inputs | Outputs | # sel inputs |
+========================================================
+| predictionTable/31 |  1024  |    1    |      10      |
+| predictionTable/32 |  1024  |   32    |      10      |
+| predictionTable/41 |  1024  |    1    |      10      |
+========================================================
+Presto compilation completed successfully.
+Information: Building the design 'decoder'. (HDL-193)
+
+Statistics for case statements in always block at line 18 in file
+	'../src/decoder.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            21            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'mux32to1' instantiated from design 'RF_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'arithShiftRight' instantiated from design 'ALU_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'bitwiseAND' instantiated from design 'ALU_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'bitwiseXOR' instantiated from design 'ALU_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+1

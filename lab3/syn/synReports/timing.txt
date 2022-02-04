@@ -1,0 +1,126 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscV
+Version: O-2018.06-SP4
+Date   : Wed Feb  2 21:35:06 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: EX_MEM_rd/regOUT_reg[0]
+              (rising edge-triggered flip-flop clocked by MYCLK)
+  Endpoint: BPUnit/PT/PT_reg[192][2]
+            (rising edge-triggered flip-flop clocked by MYCLK)
+  Path Group: MYCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MYCLK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  EX_MEM_rd/regOUT_reg[0]/CK (DFF_X1)                     0.00 #     0.00 r
+  EX_MEM_rd/regOUT_reg[0]/Q (DFF_X1)                      0.13       0.13 r
+  EX_MEM_rd/regOUT[0] (reg_N5_1)                          0.00       0.13 r
+  FUnit/rd_mem[0] (FU)                                    0.00       0.13 r
+  FUnit/U33/Z (XOR2_X1)                                   0.08       0.21 r
+  FUnit/U4/ZN (NOR3_X1)                                   0.02       0.24 f
+  FUnit/U5/ZN (NAND4_X1)                                  0.04       0.28 r
+  FUnit/U31/ZN (NAND3_X1)                                 0.03       0.31 f
+  FUnit/U2/ZN (NOR4_X1)                                   0.10       0.41 r
+  FUnit/rs2_fw[1] (FU)                                    0.00       0.41 r
+  forward2_mux/sel[1] (mux4to1_N32_1)                     0.00       0.41 r
+  forward2_mux/U16/ZN (INV_X1)                            0.03       0.44 f
+  forward2_mux/U15/ZN (AND2_X1)                           0.05       0.49 f
+  forward2_mux/U5/Z (BUF_X1)                              0.06       0.55 f
+  forward2_mux/U4/ZN (NOR3_X1)                            0.09       0.64 r
+  forward2_mux/U1/Z (BUF_X1)                              0.10       0.74 r
+  forward2_mux/U20/ZN (AOI22_X1)                          0.04       0.78 f
+  forward2_mux/U18/ZN (NAND2_X1)                          0.11       0.89 r
+  forward2_mux/muxout[1] (mux4to1_N32_1)                  0.00       0.89 r
+  ALUnit/in2[1] (ALU_N32)                                 0.00       0.89 r
+  ALUnit/ADD/in2[1] (adder_N32_0)                         0.00       0.89 r
+  ALUnit/ADD/sub_27/B[1] (adder_N32_0_DW01_sub_0)         0.00       0.89 r
+  ALUnit/ADD/sub_27/U3/ZN (INV_X1)                        0.04       0.93 f
+  ALUnit/ADD/sub_27/U2_1/CO (FA_X1)                       0.11       1.04 f
+  ALUnit/ADD/sub_27/U2_2/CO (FA_X1)                       0.09       1.13 f
+  ALUnit/ADD/sub_27/U2_3/CO (FA_X1)                       0.09       1.22 f
+  ALUnit/ADD/sub_27/U2_4/CO (FA_X1)                       0.09       1.31 f
+  ALUnit/ADD/sub_27/U2_5/CO (FA_X1)                       0.09       1.40 f
+  ALUnit/ADD/sub_27/U2_6/CO (FA_X1)                       0.09       1.49 f
+  ALUnit/ADD/sub_27/U2_7/CO (FA_X1)                       0.09       1.58 f
+  ALUnit/ADD/sub_27/U2_8/CO (FA_X1)                       0.09       1.67 f
+  ALUnit/ADD/sub_27/U2_9/CO (FA_X1)                       0.09       1.76 f
+  ALUnit/ADD/sub_27/U2_10/CO (FA_X1)                      0.09       1.86 f
+  ALUnit/ADD/sub_27/U2_11/CO (FA_X1)                      0.09       1.95 f
+  ALUnit/ADD/sub_27/U2_12/CO (FA_X1)                      0.09       2.04 f
+  ALUnit/ADD/sub_27/U2_13/CO (FA_X1)                      0.09       2.13 f
+  ALUnit/ADD/sub_27/U2_14/CO (FA_X1)                      0.09       2.22 f
+  ALUnit/ADD/sub_27/U2_15/CO (FA_X1)                      0.09       2.31 f
+  ALUnit/ADD/sub_27/U2_16/CO (FA_X1)                      0.09       2.40 f
+  ALUnit/ADD/sub_27/U2_17/CO (FA_X1)                      0.09       2.49 f
+  ALUnit/ADD/sub_27/U2_18/CO (FA_X1)                      0.09       2.58 f
+  ALUnit/ADD/sub_27/U2_19/CO (FA_X1)                      0.09       2.67 f
+  ALUnit/ADD/sub_27/U2_20/CO (FA_X1)                      0.09       2.76 f
+  ALUnit/ADD/sub_27/U2_21/CO (FA_X1)                      0.09       2.85 f
+  ALUnit/ADD/sub_27/U2_22/CO (FA_X1)                      0.09       2.94 f
+  ALUnit/ADD/sub_27/U2_23/CO (FA_X1)                      0.09       3.03 f
+  ALUnit/ADD/sub_27/U2_24/CO (FA_X1)                      0.09       3.12 f
+  ALUnit/ADD/sub_27/U2_25/CO (FA_X1)                      0.09       3.22 f
+  ALUnit/ADD/sub_27/U2_26/CO (FA_X1)                      0.09       3.31 f
+  ALUnit/ADD/sub_27/U2_27/CO (FA_X1)                      0.09       3.40 f
+  ALUnit/ADD/sub_27/U2_28/CO (FA_X1)                      0.09       3.49 f
+  ALUnit/ADD/sub_27/U2_29/CO (FA_X1)                      0.09       3.58 f
+  ALUnit/ADD/sub_27/U2_30/CO (FA_X1)                      0.09       3.67 f
+  ALUnit/ADD/sub_27/U2_31/S (FA_X1)                       0.11       3.77 f
+  ALUnit/ADD/sub_27/DIFF[31] (adder_N32_0_DW01_sub_0)     0.00       3.77 f
+  ALUnit/ADD/U66/ZN (AOI22_X1)                            0.06       3.83 r
+  ALUnit/ADD/U65/ZN (INV_X1)                              0.03       3.86 f
+  ALUnit/ADD/result[31] (adder_N32_0)                     0.00       3.86 f
+  ALUnit/U8/ZN (NOR4_X1)                                  0.10       3.96 r
+  ALUnit/U11/ZN (NAND4_X1)                                0.05       4.01 f
+  ALUnit/U9/ZN (NOR2_X1)                                  0.04       4.05 r
+  ALUnit/zero (ALU_N32)                                   0.00       4.05 r
+  U15/ZN (AOI21_X1)                                       0.03       4.08 f
+  U14/ZN (INV_X1)                                         0.03       4.10 r
+  BPUnit/effectiveResult (BPU)                            0.00       4.10 r
+  BPUnit/U5/Z (XOR2_X1)                                   0.06       4.16 r
+  BPUnit/U3/Z (BUF_X1)                                    0.07       4.23 r
+  BPUnit/PT/writePT (predictionTable)                     0.00       4.23 r
+  BPUnit/PT/U15004/Z (BUF_X1)                             0.10       4.33 r
+  BPUnit/PT/U69761/ZN (NAND3_X1)                          0.06       4.39 f
+  BPUnit/PT/U14561/Z (BUF_X1)                             0.08       4.47 f
+  BPUnit/PT/U13677/ZN (OAI21_X1)                          0.06       4.52 r
+  BPUnit/PT/U13676/ZN (INV_X1)                            0.03       4.56 f
+  BPUnit/PT/U8597/Z (BUF_X1)                              0.07       4.63 f
+  BPUnit/PT/U73546/ZN (NAND2_X1)                          0.04       4.67 r
+  BPUnit/PT/U73545/ZN (OAI21_X1)                          0.03       4.70 f
+  BPUnit/PT/PT_reg[192][2]/D (DFF_X1)                     0.01       4.71 f
+  data arrival time                                                  4.71
+
+  clock MYCLK (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  BPUnit/PT/PT_reg[192][2]/CK (DFF_X1)                    0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -4.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.17
+
+
+1
