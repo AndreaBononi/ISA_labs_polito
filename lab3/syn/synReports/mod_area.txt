@@ -1,0 +1,33 @@
+Warning: Design 'riscV' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : riscV
+Version: O-2018.06-SP4
+Date   : Thu Feb  3 12:33:14 2022
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                         8135
+Number of nets:                        159596
+Number of cells:                       151590
+Number of combinational cells:         116019
+Number of sequential cells:             35463
+Number of macros/black boxes:               0
+Number of buf/inv:                      18026
+Number of references:                      57
+
+Combinational area:             116543.910522
+Buf/Inv area:                    13557.221689
+Noncombinational area:          160354.636183
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                276898.546705
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

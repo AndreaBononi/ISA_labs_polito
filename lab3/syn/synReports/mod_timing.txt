@@ -1,0 +1,115 @@
+Information: Building the design 'CU'. (HDL-193)
+Warning: Cannot find the design 'CU' in the library 'WORK'. (LBR-1)
+Information: Building the design 'ALU' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+Warning: Cannot find the design 'ALU' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'CU' in 'riscV'. (LINK-5)
+Warning: Unable to resolve reference 'ALU' in 'riscV'. (LINK-5)
+Warning: Design 'riscV' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+Warning: Design 'riscV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscV
+Version: O-2018.06-SP4
+Date   : Thu Feb  3 12:33:12 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: ID_EX_jump/dffOUT_reg
+              (rising edge-triggered flip-flop clocked by MYCLK)
+  Endpoint: BPUnit/PT/PT_reg[384][31]
+            (rising edge-triggered flip-flop clocked by MYCLK)
+  Path Group: MYCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MYCLK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_EX_jump/dffOUT_reg/CK (DFF_X1)                       0.00 #     0.00 r
+  ID_EX_jump/dffOUT_reg/Q (DFF_X1)                        0.10       0.10 r
+  ID_EX_jump/dffOUT (D_FF_6)                              0.00       0.10 r
+  bj_mux/sel (mux2to1_N32_3)                              0.00       0.10 r
+  bj_mux/U34/Z (BUF_X1)                                   0.04       0.14 r
+  bj_mux/U6/Z (BUF_X1)                                    0.04       0.18 r
+  bj_mux/U1/ZN (INV_X1)                                   0.05       0.23 f
+  bj_mux/U13/ZN (AOI22_X1)                                0.06       0.30 r
+  bj_mux/U12/ZN (INV_X1)                                  0.04       0.33 f
+  bj_mux/muxout[0] (mux2to1_N32_3)                        0.00       0.33 f
+  bj_adder/in1[0] (adder_N32)                             0.00       0.33 f
+  bj_adder/add_25/A[0] (adder_N32_DW01_add_0)             0.00       0.33 f
+  bj_adder/add_25/U2/ZN (AND2_X1)                         0.05       0.38 f
+  bj_adder/add_25/U1_1/CO (FA_X1)                         0.09       0.47 f
+  bj_adder/add_25/U1_2/CO (FA_X1)                         0.09       0.56 f
+  bj_adder/add_25/U1_3/CO (FA_X1)                         0.09       0.65 f
+  bj_adder/add_25/U1_4/CO (FA_X1)                         0.09       0.74 f
+  bj_adder/add_25/U1_5/CO (FA_X1)                         0.09       0.83 f
+  bj_adder/add_25/U1_6/CO (FA_X1)                         0.09       0.92 f
+  bj_adder/add_25/U1_7/CO (FA_X1)                         0.09       1.01 f
+  bj_adder/add_25/U1_8/CO (FA_X1)                         0.09       1.10 f
+  bj_adder/add_25/U1_9/CO (FA_X1)                         0.09       1.19 f
+  bj_adder/add_25/U1_10/CO (FA_X1)                        0.09       1.28 f
+  bj_adder/add_25/U1_11/CO (FA_X1)                        0.09       1.37 f
+  bj_adder/add_25/U1_12/CO (FA_X1)                        0.09       1.46 f
+  bj_adder/add_25/U1_13/CO (FA_X1)                        0.09       1.55 f
+  bj_adder/add_25/U1_14/CO (FA_X1)                        0.09       1.64 f
+  bj_adder/add_25/U1_15/CO (FA_X1)                        0.09       1.73 f
+  bj_adder/add_25/U1_16/CO (FA_X1)                        0.09       1.83 f
+  bj_adder/add_25/U1_17/CO (FA_X1)                        0.09       1.92 f
+  bj_adder/add_25/U1_18/CO (FA_X1)                        0.09       2.01 f
+  bj_adder/add_25/U1_19/CO (FA_X1)                        0.09       2.10 f
+  bj_adder/add_25/U1_20/CO (FA_X1)                        0.09       2.19 f
+  bj_adder/add_25/U1_21/CO (FA_X1)                        0.09       2.28 f
+  bj_adder/add_25/U1_22/CO (FA_X1)                        0.09       2.37 f
+  bj_adder/add_25/U1_23/CO (FA_X1)                        0.09       2.46 f
+  bj_adder/add_25/U1_24/CO (FA_X1)                        0.09       2.55 f
+  bj_adder/add_25/U1_25/CO (FA_X1)                        0.09       2.64 f
+  bj_adder/add_25/U1_26/CO (FA_X1)                        0.09       2.73 f
+  bj_adder/add_25/U1_27/CO (FA_X1)                        0.09       2.82 f
+  bj_adder/add_25/U1_28/CO (FA_X1)                        0.09       2.91 f
+  bj_adder/add_25/U1_29/CO (FA_X1)                        0.09       3.00 f
+  bj_adder/add_25/U1_30/CO (FA_X1)                        0.09       3.09 f
+  bj_adder/add_25/U1_31/S (FA_X1)                         0.11       3.20 f
+  bj_adder/add_25/SUM[31] (adder_N32_DW01_add_0)          0.00       3.20 f
+  bj_adder/U25/ZN (AOI22_X1)                              0.05       3.25 r
+  bj_adder/U24/ZN (INV_X1)                                0.03       3.27 f
+  bj_adder/result[31] (adder_N32)                         0.00       3.27 f
+  BPUnit/branchAddress[31] (BPU)                          0.00       3.27 f
+  BPUnit/PT/data[31] (predictionTable)                    0.00       3.27 f
+  BPUnit/PT/U15023/ZN (NAND2_X1)                          0.03       3.30 r
+  BPUnit/PT/U15022/Z (BUF_X1)                             0.03       3.33 r
+  BPUnit/PT/U14521/Z (BUF_X1)                             0.04       3.37 r
+  BPUnit/PT/U11706/Z (BUF_X1)                             0.04       3.41 r
+  BPUnit/PT/U3947/Z (BUF_X1)                              0.05       3.46 r
+  BPUnit/PT/U485/Z (BUF_X1)                               0.09       3.55 r
+  BPUnit/PT/U29523/ZN (OAI21_X1)                          0.04       3.60 f
+  BPUnit/PT/PT_reg[384][31]/D (DFF_X1)                    0.01       3.61 f
+  data arrival time                                                  3.61
+
+  clock MYCLK (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  BPUnit/PT/PT_reg[384][31]/CK (DFF_X1)                   0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -3.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.28
+
+
+1
